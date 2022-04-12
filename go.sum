@@ -1,0 +1,5 @@
+github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/testify v1.2.1/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
+gopkg.in/netaddr.v1 v1.5.1 h1:lnD7O5z5JnrRu6mWBOd59NVgLVWM1+StKRu2uFJInDM=
+gopkg.in/netaddr.v1 v1.5.1/go.mod h1:wwHEDCASVBPRL/Fw3064+E4o4GXyQkQ66WWchZTX/3g=
