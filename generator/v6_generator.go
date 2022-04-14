@@ -42,6 +42,6 @@ func Informations(ipaddress string, sub string) {
 
 	fmt.Printf("IP Address: %s \n", ipaddress+sub)
 	fmt.Printf("First Ip Address: %s \n", ip)
-	fmt.Printf("Last Ip Address/BroadcastAddr: %s \n", netaddr.BroadcastAddr(ipnet))
+	fmt.Printf("Last Ip Address: %s \n", netaddr.BroadcastAddr(ipnet))
 	fmt.Printf("Size: %s \n", (netaddr.NetSize(ipnet)))
 }
