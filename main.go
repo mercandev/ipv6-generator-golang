@@ -32,7 +32,7 @@ func setupRoutes(app *fiber.App) {
 
 	app.Get("/", status)
 
-	app.Get("/api/GetIpv6Calculator", services.Ipv6Calculator)
+	app.Post("/api/GetIpv6Calculator", services.Ipv6Calculator)
 }
 
 func main() {

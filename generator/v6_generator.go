@@ -47,11 +47,11 @@ func Informations(ipaddress string, sub string) {
 	fmt.Printf("Size: %s \n", (netaddr.NetSize(ipnet)))
 }
 
-func IpAddressInformations(ipaddress string, sub string) model.Response {
+func IpAddressInformations(ipaddress string, sub string) (error, model.Response) {
 
 	ip, ipnet, err := net.ParseCIDR(ipaddress + sub)
 	if err != nil {
-		panic(err)
+		return err, model.Response{}
 	}
 
 	response := model.Response{
@@ -59,8 +59,8 @@ func IpAddressInformations(ipaddress string, sub string) model.Response {
 		Subnet:         sub,
 		FirstIpAddress: ip,
 		LastIpAddress:  netaddr.BroadcastAddr(ipnet),
-		Size:           netaddr.NetSize(ipnet),
+		Size:           netaddr.NetSize(ipnet).String(),
 	}
 
-	return response
+	return nil, response
 }

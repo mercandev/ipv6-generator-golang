@@ -21,7 +21,7 @@ func Ipv6Calculator(c *fiber.Ctx) error {
 		return err
 	}
 
-	result := generator.IpAddressInformations(request.IpAddress, request.Subnet)
+	err, result := generator.IpAddressInformations(request.IpAddress, request.Subnet)
 	if err != nil {
 		c.Status(400).JSON(&fiber.Map{
 			"success": false,
